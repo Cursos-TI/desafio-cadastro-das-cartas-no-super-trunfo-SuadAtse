@@ -7,9 +7,16 @@
 //Teste larissa
 
 int main() {
+    char nome_estado[20], nome_da_cidade[20];
     int populacao, pontos_turisticos;
-    float pib;
-    char area[50];
+    float pib, area;
+    
+
+    printf("Digite o nome do Estado:\n");
+    scanf("%s", &nome_estado);
+
+    printf("Digite o nome da cidade:\n");
+    scanf("%s", &nome_da_cidade);
 
     printf("Digite o numero de pessoas na cidade:\n");
     scanf("%d", &populacao);
@@ -17,13 +24,13 @@ int main() {
     printf("Digite o numero de pontos turiscos na cidade:\n");
     scanf("%d", &pontos_turisticos);
 
-    printf("Digite o valor de PIB da cidade:\n");
+    printf("Digite o valor de PIB de %s\n",nome_da_cidade);
     scanf("%f", &pib);
 
-    printf("Digite o nome da cidade:\n");
-    scanf("%s", &area);
+    printf("Digite o valor da área em km² de %s\n", nome_da_cidade);
+    scanf("%f", &area);
 
-    printf("Nome da cidade: %s\nPopulação: %d\nPontos turísticos: %d\nPIB: %f\n", area, populacao, pontos_turisticos, pib);
+    printf("Nome do Estado: %s\nNome da cidade: %s\nPopulação: %d\nPontos turísticos: %d\nPIB: %f\nÁrea: %f\n", nome_estado, nome_da_cidade, populacao, pontos_turisticos, pib, area);
 
 
 
