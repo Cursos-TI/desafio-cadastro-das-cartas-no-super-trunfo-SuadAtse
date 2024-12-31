@@ -7,7 +7,27 @@
 //Teste larissa
 
 int main() {
-    printf("Desafio super cartas!\n");
+    int populacao, pontos_turisticos;
+    float pib;
+    char area[50];
+
+    printf("Digite o numero de pessoas na cidade:\n");
+    scanf("%d", &populacao);
+
+    printf("Digite o numero de pontos turiscos na cidade:\n");
+    scanf("%d", &pontos_turisticos);
+
+    printf("Digite o valor de PIB da cidade:\n");
+    scanf("%f", &pib);
+
+    printf("Digite o nome da cidade:\n");
+    scanf("%s", &area);
+
+    printf("Nome da cidade: %s\nPopulação: %d\nPontos turísticos: %d\nPIB: %f\n", area, populacao, pontos_turisticos, pib);
+
+
+
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
