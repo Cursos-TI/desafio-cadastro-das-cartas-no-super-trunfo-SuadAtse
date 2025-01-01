@@ -9,7 +9,7 @@
 int main() {
     char nome_estado[20], nome_da_cidade[20];
     int populacao, pontos_turisticos;
-    float pib, area;
+    float pib, area, densidade_populacional, pib_per_capita;
     
 
     printf("Digite o nome do Estado:\n");
@@ -18,7 +18,7 @@ int main() {
     printf("Digite o nome da cidade:\n");
     scanf("%s", &nome_da_cidade);
 
-    printf("Digite o numero de pessoas na cidade:\n");
+    printf("Digite o valor da população em %s\n",nome_da_cidade);
     scanf("%d", &populacao);
 
     printf("Digite o numero de pontos turiscos na cidade:\n");
@@ -29,8 +29,13 @@ int main() {
 
     printf("Digite o valor da área em km² de %s\n", nome_da_cidade);
     scanf("%f", &area);
+    
+    densidade_populacional = populacao/area;
 
-    printf("Nome do Estado: %s\nNome da cidade: %s\nPopulação: %d\nPontos turísticos: %d\nPIB: %f\nÁrea: %f\n", nome_estado, nome_da_cidade, populacao, pontos_turisticos, pib, area);
+    pib_per_capita = pib/populacao;
+
+
+    printf("Nome do Estado: %s\nNome da cidade: %s\nPopulação: %d\nPontos turísticos: %d\nPIB: %f\nÁrea: %f\nDensidade Populaciomal: %f\nPIB per capita: %f\n", nome_estado, nome_da_cidade, populacao, pontos_turisticos, pib, area, densidade_populacional, pib_per_capita);
 
 
 
